@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>50+ School Website Templates | Academe Design System</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            app: '#f3f0ff',
+            pane: '#fcfbff',
+            bordercol: '#d4c8ff',
+            abigreen: '#4CAF50',
+            abidarkblue: '#6d28d9',
+            abicyan: '#00cfff',
+            abirose: '#ff4fcf',
+            textmain: '#23124f',
+            textmuted: '#75669f',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f3f0ff] text-[#23124f] font-sans antialiased flex flex-col min-h-screen">
+
+  <div class="bg-[#6d28d9] text-white text-xs py-2.5 px-4 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2.5">
+        <span class="bg-[#00cfff] text-[#23124f] font-extrabold px-2.5 py-0.5 rounded-full text-[11px] uppercase tracking-wider shadow-sm">Templates Library</span>
+        <span class="text-white/95">50+ Production-Ready School & University UI Templates.</span>
+      </div>
+      <div class="flex items-center gap-5 text-xs text-white/90">
+        <a href="tel:+1234567890" class="hover:text-[#00cfff] transition"><i class="fa-solid fa-phone mr-1.5 text-[#00cfff]"></i> (555) 234-5678</a>
+        <a href="mailto:admissions@academe.edu" class="hover:text-[#00cfff] transition"><i class="fa-solid fa-envelope mr-1.5 text-[#00cfff]"></i> admissions@academe.edu</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="bg-[#fcfbff]/95 backdrop-blur-md sticky top-0 z-40 border-b border-[#d4c8ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#6d28d9] via-[#8b5cf6] to-[#00cfff] flex items-center justify-center text-white text-2xl shadow-md shadow-[#6d28d9]/25 group-hover:rotate-6 transition-transform duration-300">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <span class="text-2xl font-black tracking-tight text-[#23124f]">ACADÈ<span class="text-[#6d28d9]">ME</span></span>
+            <span class="block text-[10px] font-bold tracking-widest text-[#75669f] uppercase -mt-1">Template Showcase</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold text-[#75669f]">
+          <a href="index.html" class="nav-link hover:text-[#6d28d9] transition">Home</a>
+          <a href="courses.html" class="nav-link hover:text-[#6d28d9] transition">Courses</a>
+          <a href="faculty.html" class="nav-link hover:text-[#6d28d9] transition">Faculty</a>
+          <a href="announcements.html" class="nav-link hover:text-[#6d28d9] transition">Announcements</a>
+          <a href="gallery.html" class="nav-link hover:text-[#6d28d9] transition">Gallery</a>
+          <a href="templates.html" class="nav-link hover:text-[#6d28d9] transition active">50+ Templates</a>
+          <a href="contact.html" class="nav-link hover:text-[#6d28d9] transition">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="contact.html" class="btn-primary font-bold px-6 py-2.5 rounded-xl shadow-md text-sm">
+            Apply Now
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" aria-expanded="false" class="md:hidden p-2.5 rounded-xl bg-[#f3f0ff] border border-[#d4c8ff] text-[#23124f]">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-[#fcfbff] border-b border-[#d4c8ff] px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Home</a>
+      <a href="courses.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Courses</a>
+      <a href="faculty.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Faculty</a>
+      <a href="announcements.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Announcements</a>
+      <a href="gallery.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Gallery</a>
+      <a href="templates.html" class="block px-3 py-2 rounded-lg font-medium text-[#6d28d9] bg-[#f3e8ff]">50+ Templates</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Contact</a>
+    </div>
+  </header>
+
+  <section class="relative bg-gradient-to-b from-[#f3e8ff]/70 via-[#fcfbff] to-[#f3f0ff] py-16 sm:py-24 text-center border-b border-[#d4c8ff] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#fcfbff] border border-[#d4c8ff] text-[#6d28d9] text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-[#ff4fcf] animate-ping"></span>
+        <span>52 Ready-to-Use UI Layouts</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-[#23124f] mb-5 leading-tight">
+        50+ Complete School & Academy <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6d28d9] via-[#8b5cf6] to-[#ff4fcf]">Website Page Templates</span>
+      </h1>
+      <p class="text-[#75669f] max-w-3xl mx-auto text-base sm:text-lg leading-relaxed mb-8">
+        A comprehensive collection of 52 modular page layouts, administrative modules, academic syllabi, student portals, and campus facility screens designed with clean 3D aesthetics.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-3 text-xs sm:text-sm font-bold">
+        <span class="px-4 py-2 rounded-xl bg-[#fcfbff] border border-[#d4c8ff] text-[#6d28d9] shadow-sm"><i class="fa-solid fa-book-open mr-1.5 text-[#6d28d9]"></i> 10 Academic Layouts</span>
+        <span class="px-4 py-2 rounded-xl bg-[#fcfbff] border border-[#d4c8ff] text-[#ff4fcf] shadow-sm"><i class="fa-solid fa-users mr-1.5 text-[#ff4fcf]"></i> 10 Student Life & Campus</span>
+        <span class="px-4 py-2 rounded-xl bg-[#fcfbff] border border-[#d4c8ff] text-[#0284c7] shadow-sm"><i class="fa-solid fa-file-signature mr-1.5 text-[#00cfff]"></i> 10 Admissions & Finance</span>
+        <span class="px-4 py-2 rounded-xl bg-[#fcfbff] border border-[#d4c8ff] text-[#4CAF50] shadow-sm"><i class="fa-solid fa-shield-halved mr-1.5 text-[#4CAF50]"></i> 10 Governance & Staff</span>
+        <span class="px-4 py-2 rounded-xl bg-[#fcfbff] border border-[#d4c8ff] text-[#6d28d9] shadow-sm"><i class="fa-solid fa-bullhorn mr-1.5 text-[#6d28d9]"></i> 12 Media & Portals</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-8 bg-[#fcfbff] border-b border-[#d4c8ff] sticky top-20 z-30 backdrop-blur-md bg-[#fcfbff]/95 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        
+        <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+          <button data-filter-btn="all" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-[#6d28d9] text-white shadow-md shadow-[#6d28d9]/25 transition">All 50+ Templates</button>
+          <button data-filter-btn="academic" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Academics (1-10)</button>
+          <button data-filter-btn="campus" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Campus Life (11-20)</button>
+          <button data-filter-btn="admissions" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Admissions (21-30)</button>
+          <button data-filter-btn="governance" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Staff & Faculty (31-40)</button>
+          <button data-filter-btn="portals" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Media & Portals (41-52)</button>
+        </div>
+
+        <div class="w-full md:w-80 relative">
+          <input type="text" id="filter-search" placeholder="Search 50+ templates..." class="w-full pl-10 pr-4 py-2.5 bg-[#f3f0ff] border border-[#d4c8ff] rounded-xl text-sm text-[#23124f] placeholder-[#75669f] focus:outline-none focus:border-[#6d28d9] focus:bg-white focus:ring-1 focus:ring-[#6d28d9]">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-[#75669f] text-sm"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 flex-1 bg-[#f3f0ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="templates-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      </div>
+    </div>
+  </section>
+
+  <div id="template-modal" class="fixed inset-0 z-50 bg-[#23124f]/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] max-w-3xl w-full p-6 sm:p-8 max-h-[90vh] overflow-y-auto shadow-2xl relative">
+      <button id="modal-close-btn" class="absolute top-6 right-6 text-2xl text-[#75669f] hover:text-[#6d28d9]">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="bg-[#fcfbff] text-[#75669f] py-12 border-t border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs sm:text-sm space-y-3">
+      <div class="flex items-center justify-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-[#6d28d9] flex items-center justify-center text-white text-sm">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <span class="text-base font-black text-[#23124f]">ACADEME 50+ TEMPLATES SUITE</span>
+      </div>
+      <p>&copy; 2026 Academe International School. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/templates-data.js"></script>
+</body>
+</html>

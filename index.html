@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academe International School | Excellence in Education</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            app: '#f3f0ff',
+            pane: '#fcfbff',
+            bordercol: '#d4c8ff',
+            abigreen: '#4CAF50',
+            abidarkblue: '#6d28d9',
+            abicyan: '#00cfff',
+            abirose: '#ff4fcf',
+            textmain: '#23124f',
+            textmuted: '#75669f',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f3f0ff] text-[#23124f] font-sans antialiased flex flex-col min-h-screen">
+
+  <div class="bg-[#6d28d9] text-white text-xs py-2.5 px-4 relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2.5">
+        <span class="bg-[#00cfff] text-[#23124f] font-extrabold px-2.5 py-0.5 rounded-full text-[11px] uppercase tracking-wider shadow-sm">Admissions 2026-27</span>
+        <span class="text-white/95">Early registration and merit scholarship applications are now open for all grades.</span>
+      </div>
+      <div class="flex items-center gap-5 text-xs text-white/90">
+        <a href="tel:+1234567890" class="hover:text-[#00cfff] transition"><i class="fa-solid fa-phone mr-1.5 text-[#00cfff]"></i> (555) 234-5678</a>
+        <a href="mailto:admissions@academe.edu" class="hover:text-[#00cfff] transition"><i class="fa-solid fa-envelope mr-1.5 text-[#00cfff]"></i> admissions@academe.edu</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="bg-[#fcfbff]/95 backdrop-blur-md sticky top-0 z-40 border-b border-[#d4c8ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#6d28d9] via-[#8b5cf6] to-[#00cfff] flex items-center justify-center text-white text-2xl shadow-md shadow-[#6d28d9]/25 group-hover:rotate-6 transition-transform duration-300">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <span class="text-2xl font-black tracking-tight text-[#23124f]">ACADÈ<span class="text-[#6d28d9]">ME</span></span>
+            <span class="block text-[10px] font-bold tracking-widest text-[#75669f] uppercase -mt-1">International School</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold text-[#75669f]">
+          <a href="index.html" class="nav-link hover:text-[#6d28d9] transition active">Home</a>
+          <a href="courses.html" class="nav-link hover:text-[#6d28d9] transition">Courses</a>
+          <a href="faculty.html" class="nav-link hover:text-[#6d28d9] transition">Faculty</a>
+          <a href="announcements.html" class="nav-link hover:text-[#6d28d9] transition">Announcements</a>
+          <a href="gallery.html" class="nav-link hover:text-[#6d28d9] transition">Gallery</a>
+          <a href="templates.html" class="nav-link hover:text-[#6d28d9] transition">50+ Templates</a>
+          <a href="contact.html" class="nav-link hover:text-[#6d28d9] transition">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="contact.html" class="btn-primary font-bold px-6 py-2.5 rounded-xl text-sm shadow-md flex items-center gap-2">
+            <span>Apply For Admission</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" aria-expanded="false" class="md:hidden p-2.5 rounded-xl bg-[#f3f0ff] border border-[#d4c8ff] text-[#23124f]">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-[#fcfbff] border-b border-[#d4c8ff] px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-lg font-medium text-[#6d28d9] bg-[#f3e8ff]">Home</a>
+      <a href="courses.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Courses</a>
+      <a href="faculty.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Faculty</a>
+      <a href="announcements.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Announcements</a>
+      <a href="gallery.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Gallery</a>
+      <a href="templates.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">50+ Templates</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Contact</a>
+      <div class="pt-3">
+        <a href="contact.html" class="block w-full text-center btn-primary font-bold py-3 rounded-xl">Apply for Admission</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative bg-gradient-to-b from-[#f3f0ff] via-[#fcfbff] to-[#f3f0ff] py-20 lg:py-28 overflow-hidden">
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-[#6d28d9]/10 rounded-full blur-3xl pointer-events-none animate-pulse-glow"></div>
+    <div class="absolute top-1/2 -right-32 w-96 h-96 bg-[#00cfff]/15 rounded-full blur-3xl pointer-events-none animate-pulse-glow"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#fcfbff] border border-[#d4c8ff] text-[#6d28d9] text-xs font-bold tracking-wide uppercase shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-[#4CAF50] animate-ping"></span>
+            <span>Ranked #1 Academic Institution 2026</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-6xl lg:text-6xl font-black tracking-tight text-[#23124f] leading-[1.15]">
+            Where Curiosity Meets <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#6d28d9] via-[#8b5cf6] to-[#ff4fcf]">Limitless Innovation</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-[#75669f] max-w-2xl leading-relaxed">
+            Academe equips learners with Ivy-standard academic rigor, next-generation STEM laboratories, creative arts mastery, and empathetic global leadership.
+          </p>
+
+          <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
+            <a href="courses.html" class="btn-primary font-bold px-8 py-4 rounded-xl shadow-lg flex items-center gap-3">
+              <span>Explore Programs</span>
+              <i class="fa-solid fa-compass"></i>
+            </a>
+            <a href="templates.html" class="btn-secondary font-semibold px-8 py-4 rounded-xl shadow-sm flex items-center gap-2">
+              <i class="fa-solid fa-layer-group text-[#6d28d9]"></i>
+              <span>View 50+ Templates</span>
+            </a>
+          </div>
+
+          <div class="pt-8 border-t border-[#d4c8ff] grid grid-cols-3 gap-6 text-center lg:text-left">
+            <div>
+              <div class="text-3xl sm:text-4xl font-black text-[#6d28d9]">100%</div>
+              <div class="text-xs text-[#75669f] mt-1 font-semibold">University Acceptance</div>
+            </div>
+            <div>
+              <div class="text-3xl sm:text-4xl font-black text-[#4CAF50]">10:1</div>
+              <div class="text-xs text-[#75669f] mt-1 font-semibold">Student Mentor Ratio</div>
+            </div>
+            <div>
+              <div class="text-3xl sm:text-4xl font-black text-[#ff4fcf]">45+</div>
+              <div class="text-xs text-[#75669f] mt-1 font-semibold">STEM & Arts Clubs</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative">
+          <div class="hero-3d-box tilt-element relative rounded-3xl p-3 bg-[#fcfbff] border-2 border-[#d4c8ff] shadow-xl">
+            <div class="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-sm">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=900&auto=format&fit=crop" alt="Students in modern campus library" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#23124f]/90 via-[#23124f]/20 to-transparent flex flex-col justify-end p-6 sm:p-8">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#00cfff] mb-1">Campus Highlight</span>
+                <h3 class="text-xl font-extrabold text-white">Innovation Center & Next-Gen STEM Laboratories</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute -bottom-6 -left-6 bg-[#fcfbff] p-4 rounded-2xl border-2 border-[#d4c8ff] shadow-xl animate-float hidden sm:flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-[#e8f5e9] text-[#4CAF50] flex items-center justify-center text-2xl">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-[#23124f] uppercase">STEM Olympiad Champions</h4>
+              <p class="text-[11px] text-[#75669f]">1st Place Robotics & AI 2026</p>
+            </div>
+          </div>
+
+          <div class="absolute -top-6 -right-6 bg-[#fcfbff] p-4 rounded-2xl border-2 border-[#d4c8ff] shadow-xl animate-float-slow hidden sm:flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-[#f3e8ff] text-[#6d28d9] flex items-center justify-center text-xl">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-[#23124f] uppercase">Global Accreditation</h4>
+              <p class="text-[11px] text-[#75669f]">IB World & Cambridge Int.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-[#fcfbff] border-t border-[#d4c8ff] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs font-extrabold uppercase tracking-widest text-[#6d28d9] mb-3">Holistic Excellence</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-[#23124f] tracking-tight">Crafted For The Leaders of Tomorrow</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="card-3d bg-[#fcfbff] border-2 border-[#d4c8ff] hover:border-[#6d28d9] p-8 rounded-3xl relative overflow-hidden group shadow-sm">
+          <div class="w-16 h-16 rounded-2xl bg-[#f3e8ff] text-[#6d28d9] flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#23124f] mb-3">Advanced STEM & AI Labs</h3>
+          <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+            Equipped with 3D fabrication printers, machine learning workstations, and competitive FIRST Robotics engineering rigs.
+          </p>
+          <div class="h-44 rounded-2xl overflow-hidden border border-[#d4c8ff]">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop" alt="Students in robotics lab" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+        </div>
+
+        <div class="card-3d bg-[#fcfbff] border-2 border-[#d4c8ff] hover:border-[#ff4fcf] p-8 rounded-3xl relative overflow-hidden group shadow-sm">
+          <div class="w-16 h-16 rounded-2xl bg-[#fff0f9] text-[#ff4fcf] flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-earth-americas"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#23124f] mb-3">Global Humanities & Debate</h3>
+          <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+            Model United Nations summits, philosophy symposiums, multi-lingual fluency programs, and high-impact community outreach.
+          </p>
+          <div class="h-44 rounded-2xl overflow-hidden border border-[#d4c8ff]">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=600&auto=format&fit=crop" alt="Student presentation" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+        </div>
+
+        <div class="card-3d bg-[#fcfbff] border-2 border-[#d4c8ff] hover:border-[#4CAF50] p-8 rounded-3xl relative overflow-hidden group shadow-sm">
+          <div class="w-16 h-16 rounded-2xl bg-[#e8f5e9] text-[#4CAF50] flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <h3 class="text-xl font-bold text-[#23124f] mb-3">Athletics & Performing Arts</h3>
+          <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+            Olympic-grade swimming arena, indoor basketball stadium, theater performance hall, and professional fine arts studios.
+          </p>
+          <div class="h-44 rounded-2xl overflow-hidden border border-[#d4c8ff]">
+            <img src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?q=80&w=600&auto=format&fit=crop" alt="Students in sports arena" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-[#f3f0ff] border-t border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#6d28d9] mb-2 block">Flagship Curriculums</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#23124f]">Programs Designed For Every Grade</h2>
+        </div>
+        <a href="courses.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#6d28d9] hover:text-[#5b21b6] transition">
+          <span>View All Curriculums</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="card-3d bg-[#fcfbff] rounded-3xl overflow-hidden border-2 border-[#d4c8ff] hover:border-[#6d28d9] flex flex-col justify-between group shadow-sm">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=700&auto=format&fit=crop" alt="Primary School Classroom" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <span class="absolute top-4 right-4 bg-[#6d28d9] text-white text-xs font-bold px-3 py-1 rounded-full shadow">Grades 1 – 5</span>
+          </div>
+          <div class="p-7 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-[#23124f] mb-2">Primary Foundation Years</h3>
+              <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+                Fostering wonder and foundational mastery in Singapore Math, literacy, environmental inquiry, and creative thinking.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#d4c8ff]/60 flex justify-between items-center text-xs">
+              <span class="text-[#75669f]"><i class="fa-regular fa-clock mr-1 text-[#6d28d9]"></i> Full Day Program</span>
+              <a href="courses.html" class="font-bold text-[#6d28d9] hover:text-[#5b21b6]">Curriculum Details &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-3d bg-[#fcfbff] rounded-3xl overflow-hidden border-2 border-[#d4c8ff] hover:border-[#ff4fcf] flex flex-col justify-between group shadow-sm">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=700&auto=format&fit=crop" alt="Middle school research" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <span class="absolute top-4 right-4 bg-[#ff4fcf] text-white text-xs font-extrabold px-3 py-1 rounded-full shadow">Grades 6 – 8</span>
+          </div>
+          <div class="p-7 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-[#23124f] mb-2">Middle School Discovery</h3>
+              <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+                Interdisciplinary focus on algebra, laboratory science, World History, debate, and foundational coding in Python.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#d4c8ff]/60 flex justify-between items-center text-xs">
+              <span class="text-[#75669f]"><i class="fa-regular fa-clock mr-1 text-[#ff4fcf]"></i> Full Day Program</span>
+              <a href="courses.html" class="font-bold text-[#ff4fcf] hover:text-[#db2777]">Curriculum Details &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-3d bg-[#fcfbff] rounded-3xl overflow-hidden border-2 border-[#d4c8ff] hover:border-[#00cfff] flex flex-col justify-between group shadow-sm">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=700&auto=format&fit=crop" alt="High School Senior Seminar" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <span class="absolute top-4 right-4 bg-[#0284c7] text-white text-xs font-bold px-3 py-1 rounded-full shadow">Grades 9 – 12</span>
+          </div>
+          <div class="p-7 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-[#23124f] mb-2">Senior High & AP Honors</h3>
+              <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+                Rigorous college-prep tracks with 24 Advanced Placement courses, calculus, pre-med, computer engineering, and law seminars.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-[#d4c8ff]/60 flex justify-between items-center text-xs">
+              <span class="text-[#75669f]"><i class="fa-regular fa-clock mr-1 text-[#0284c7]"></i> AP / Honors Track</span>
+              <a href="courses.html" class="font-bold text-[#0284c7] hover:text-[#0369a1]">Curriculum Details &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-[#fcfbff] border-t border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-[#6d28d9] mb-1 block">Live Updates</span>
+              <h3 class="text-3xl font-extrabold text-[#23124f]">Latest Announcements</h3>
+            </div>
+            <a href="announcements.html" class="text-xs font-bold text-[#6d28d9] hover:underline">View All Notices</a>
+          </div>
+
+          <div class="space-y-4">
+            <div class="card-3d p-6 rounded-2xl bg-[#fcfbff] border-2 border-[#d4c8ff] hover:border-[#6d28d9] flex items-start gap-5">
+              <div class="bg-[#6d28d9] text-white rounded-xl p-3 text-center min-w-[56px] shadow-sm">
+                <span class="block text-xs uppercase font-extrabold">Sep</span>
+                <span class="block text-xl font-black">25</span>
+              </div>
+              <div class="flex-1">
+                <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-[#f3e8ff] text-[#6d28d9] border border-[#d4c8ff]">Examination</span>
+                <h4 class="text-base font-bold text-[#23124f] mt-1.5">Mid-Term Assessment Datesheet Released (Grades 6–12)</h4>
+                <p class="text-xs text-[#75669f] mt-1">Check individual timetables, syllabus summaries, and revision hall schedules.</p>
+              </div>
+            </div>
+
+            <div class="card-3d p-6 rounded-2xl bg-[#fcfbff] border-2 border-[#d4c8ff] hover:border-[#ff4fcf] flex items-start gap-5">
+              <div class="bg-[#ff4fcf] text-white rounded-xl p-3 text-center min-w-[56px] shadow-sm">
+                <span class="block text-xs uppercase font-extrabold">Oct</span>
+                <span class="block text-xl font-black">08</span>
+              </div>
+              <div class="flex-1">
+                <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-[#fff0f9] text-[#db2777] border border-[#fbcfe8]">Campus Event</span>
+                <h4 class="text-base font-bold text-[#23124f] mt-1.5">Annual STEM & AI Robotics Expo 2026</h4>
+                <p class="text-xs text-[#75669f] mt-1">Parents, guests, and visiting academics are welcome to explore over 120 student projects.</p>
+              </div>
+            </div>
+
+            <div class="card-3d p-6 rounded-2xl bg-[#fcfbff] border-2 border-[#d4c8ff] hover:border-[#4CAF50] flex items-start gap-5">
+              <div class="bg-[#4CAF50] text-white rounded-xl p-3 text-center min-w-[56px] shadow-sm">
+                <span class="block text-xs uppercase font-extrabold">Oct</span>
+                <span class="block text-xl font-black">14</span>
+              </div>
+              <div class="flex-1">
+                <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-[#e8f5e9] text-[#4CAF50] border border-[#c8e6c9]">Athletics</span>
+                <h4 class="text-base font-bold text-[#23124f] mt-1.5">Inter-School Autumn Sports Championship Trials</h4>
+                <p class="text-xs text-[#75669f] mt-1">Varsity track and field, basketball, and soccer team trials at the North Sports Complex.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 card-3d p-8 rounded-3xl bg-gradient-to-br from-[#6d28d9] via-[#7c3aed] to-[#8b5cf6] text-white shadow-xl relative overflow-hidden">
+          <i class="fa-solid fa-quote-left text-4xl text-[#00cfff] opacity-60 mb-4 block"></i>
+          <h3 class="text-2xl font-bold mb-4">Principal's Address</h3>
+          <p class="text-purple-100 text-sm leading-relaxed italic mb-8">
+            "At Academe, we view every student not merely as a scholar, but as a future architect of world solutions. Our duty is to empower their intellect, fuel their imagination, and instill unwavering integrity."
+          </p>
+
+          <div class="flex items-center gap-4 pt-6 border-t border-white/20">
+            <div class="w-14 h-14 rounded-full overflow-hidden border-2 border-[#00cfff] shadow-md">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300&auto=format&fit=crop" alt="Dr. Eleanor Vance" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <h4 class="text-base font-bold text-white">Dr. Eleanor Vance, Ph.D.</h4>
+              <p class="text-xs text-purple-200">Head of School & Principal</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-[#f3f0ff] border-t border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#6d28d9] mb-2 block">Moments & Highlights</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#23124f]">Life at Academe</h2>
+        </div>
+        <a href="gallery.html" class="inline-flex items-center gap-2 text-sm font-bold text-[#6d28d9] hover:text-[#5b21b6] transition">
+          <span>Open Full Gallery</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="card-3d rounded-2xl overflow-hidden aspect-square bg-[#fcfbff] relative group cursor-pointer border-2 border-[#d4c8ff]">
+          <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?q=80&w=700&auto=format&fit=crop" alt="Modern Science Lab" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#23124f]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white">
+            <span class="text-xs font-bold uppercase text-[#00cfff]">Research</span>
+            <p class="text-sm font-semibold">Chemistry & Biotech Labs</p>
+          </div>
+        </div>
+
+        <div class="card-3d rounded-2xl overflow-hidden aspect-square bg-[#fcfbff] relative group cursor-pointer border-2 border-[#d4c8ff]">
+          <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?q=80&w=700&auto=format&fit=crop" alt="Historic Quadrangle Campus" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#23124f]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white">
+            <span class="text-xs font-bold uppercase text-[#ff4fcf]">Campus</span>
+            <p class="text-sm font-semibold">Central Academic Quad</p>
+          </div>
+        </div>
+
+        <div class="card-3d rounded-2xl overflow-hidden aspect-square bg-[#fcfbff] relative group cursor-pointer border-2 border-[#d4c8ff]">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=700&auto=format&fit=crop" alt="Performing arts & Music Concert" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#23124f]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white">
+            <span class="text-xs font-bold uppercase text-[#00cfff]">Arts</span>
+            <p class="text-sm font-semibold">Winter Symphony Concert</p>
+          </div>
+        </div>
+
+        <div class="card-3d rounded-2xl overflow-hidden aspect-square bg-[#fcfbff] relative group cursor-pointer border-2 border-[#d4c8ff]">
+          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=700&auto=format&fit=crop" alt="Athletic Track Sprint" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#23124f]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end text-white">
+            <span class="text-xs font-bold uppercase text-[#4CAF50]">Athletics</span>
+            <p class="text-sm font-semibold">Annual Sports Sprint Cup</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative py-20 bg-gradient-to-r from-[#6d28d9] via-[#7c3aed] to-[#4f46e5] text-white overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <h2 class="text-3xl sm:text-5xl font-extrabold mb-4">Shape Your Future at Academe</h2>
+      <p class="text-purple-100 max-w-xl mx-auto mb-10 text-base">
+        Join our vibrant student community and prepare for admission into top-tier universities worldwide.
+      </p>
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="contact.html" class="bg-[#00cfff] hover:bg-[#38bdf8] text-[#23124f] font-extrabold px-9 py-4 rounded-xl shadow-lg hover:scale-105 transition duration-200">
+          Apply For 2026-2027
+        </a>
+        <a href="templates.html" class="bg-white/10 hover:bg-white/20 text-white font-bold px-9 py-4 rounded-xl border border-white/20 transition duration-200">
+          Explore 50+ Templates
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#fcfbff] text-[#75669f] pt-16 pb-12 mt-auto border-t border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#d4c8ff]">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-[#6d28d9] flex items-center justify-center text-white text-xl shadow-md">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <span class="text-xl font-black text-[#23124f] tracking-tight">ACADEME</span>
+          </div>
+          <p class="text-xs sm:text-sm text-[#75669f] leading-relaxed pr-6">
+            Empowering students with academic rigour, moral integrity, cutting-edge STEM, and creative mastery.
+          </p>
+          <div class="flex gap-3 text-[#6d28d9] pt-2">
+            <a href="#" class="w-9 h-9 rounded-xl bg-[#f3f0ff] border border-[#d4c8ff] hover:bg-[#6d28d9] hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-facebook-f text-xs"></i></a>
+            <a href="#" class="w-9 h-9 rounded-xl bg-[#f3f0ff] border border-[#d4c8ff] hover:bg-[#6d28d9] hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-x-twitter text-xs"></i></a>
+            <a href="#" class="w-9 h-9 rounded-xl bg-[#f3f0ff] border border-[#d4c8ff] hover:bg-[#6d28d9] hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-instagram text-xs"></i></a>
+            <a href="#" class="w-9 h-9 rounded-xl bg-[#f3f0ff] border border-[#d4c8ff] hover:bg-[#6d28d9] hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-youtube text-xs"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-extrabold text-[#23124f] uppercase tracking-widest mb-4">Quick Navigation</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="index.html" class="hover:text-[#6d28d9] transition">Home</a></li>
+            <li><a href="courses.html" class="hover:text-[#6d28d9] transition">Curriculums</a></li>
+            <li><a href="faculty.html" class="hover:text-[#6d28d9] transition">Faculty Directory</a></li>
+            <li><a href="announcements.html" class="hover:text-[#6d28d9] transition">Notice Board</a></li>
+            <li><a href="templates.html" class="hover:text-[#6d28d9] transition">50+ Templates</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-extrabold text-[#23124f] uppercase tracking-widest mb-4">Programs</h4>
+          <ul class="space-y-2.5 text-xs sm:text-sm">
+            <li><a href="courses.html" class="hover:text-[#6d28d9] transition">Primary Wing (1-5)</a></li>
+            <li><a href="courses.html" class="hover:text-[#6d28d9] transition">Middle School (6-8)</a></li>
+            <li><a href="courses.html" class="hover:text-[#6d28d9] transition">Senior & AP Track</a></li>
+            <li><a href="courses.html" class="hover:text-[#6d28d9] transition">Robotics & AI Academy</a></li>
+            <li><a href="courses.html" class="hover:text-[#6d28d9] transition">Fine & Digital Arts</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-extrabold text-[#23124f] uppercase tracking-widest mb-4">Admissions</h4>
+          <ul class="space-y-3 text-xs sm:text-sm">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot mt-1 text-[#6d28d9]"></i>
+              <span class="text-[#75669f]">450 Academy Way, Cambridge Hills, MA 02138</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-phone text-[#6d28d9]"></i>
+              <span class="text-[#75669f]">(555) 234-5678</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-envelope text-[#6d28d9]"></i>
+              <span class="text-[#75669f]">admissions@academe.edu</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-[#75669f] gap-4">
+        <p>&copy; 2026 Academe International School. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-[#6d28d9]">Privacy Policy</a>
+          <a href="#" class="hover:text-[#6d28d9]">Terms of Service</a>
+          <a href="#" class="hover:text-[#6d28d9]">Parent Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

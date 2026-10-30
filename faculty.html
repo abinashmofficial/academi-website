@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty & Leadership | Academe International School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            app: '#f3f0ff',
+            pane: '#fcfbff',
+            bordercol: '#d4c8ff',
+            abigreen: '#4CAF50',
+            abidarkblue: '#6d28d9',
+            abicyan: '#00cfff',
+            abirose: '#ff4fcf',
+            textmain: '#23124f',
+            textmuted: '#75669f',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f3f0ff] text-[#23124f] font-sans antialiased flex flex-col min-h-screen">
+
+  <header class="bg-[#fcfbff]/95 backdrop-blur-md sticky top-0 z-40 border-b border-[#d4c8ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#6d28d9] via-[#8b5cf6] to-[#00cfff] flex items-center justify-center text-white text-2xl shadow-md shadow-[#6d28d9]/25 group-hover:rotate-6 transition-transform duration-300">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <span class="text-2xl font-black tracking-tight text-[#23124f]">ACADÈ<span class="text-[#6d28d9]">ME</span></span>
+            <span class="block text-[10px] font-bold tracking-widest text-[#75669f] uppercase -mt-1">International School</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold text-[#75669f]">
+          <a href="index.html" class="nav-link hover:text-[#6d28d9] transition">Home</a>
+          <a href="courses.html" class="nav-link hover:text-[#6d28d9] transition">Courses</a>
+          <a href="faculty.html" class="nav-link hover:text-[#6d28d9] transition active">Faculty</a>
+          <a href="announcements.html" class="nav-link hover:text-[#6d28d9] transition">Announcements</a>
+          <a href="gallery.html" class="nav-link hover:text-[#6d28d9] transition">Gallery</a>
+          <a href="templates.html" class="nav-link hover:text-[#6d28d9] transition">50+ Templates</a>
+          <a href="contact.html" class="nav-link hover:text-[#6d28d9] transition">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="contact.html" class="btn-primary font-bold px-6 py-2.5 rounded-xl shadow-md text-sm">
+            Apply Now
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl bg-[#f3f0ff] border border-[#d4c8ff] text-[#23124f]">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-[#fcfbff] border-b border-[#d4c8ff] px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Home</a>
+      <a href="courses.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Courses</a>
+      <a href="faculty.html" class="block px-3 py-2 rounded-lg font-medium text-[#6d28d9] bg-[#f3e8ff]">Faculty</a>
+      <a href="announcements.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Announcements</a>
+      <a href="gallery.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Gallery</a>
+      <a href="templates.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">50+ Templates</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Contact</a>
+    </div>
+  </header>
+
+  <section class="relative bg-gradient-to-b from-[#f3e8ff]/60 via-[#fcfbff] to-[#f3f0ff] py-20 text-center border-b border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#6d28d9] mb-2 block">Our Academic Pillars</span>
+      <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-[#23124f] mb-4">Faculty & Academic Leadership</h1>
+      <p class="text-[#75669f] max-w-2xl mx-auto text-base">
+        Meet our world-class educators, researchers, and mentors committed to igniting student potential.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-8 bg-[#fcfbff] border-b border-[#d4c8ff] sticky top-20 z-30 backdrop-blur-md bg-[#fcfbff]/95 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        
+        <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+          <button data-filter-btn="all" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-[#6d28d9] text-white shadow-md shadow-[#6d28d9]/25 transition">All Departments</button>
+          <button data-filter-btn="stem" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Science & Math</button>
+          <button data-filter-btn="humanities" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Humanities & Languages</button>
+          <button data-filter-btn="arts" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Arts & Athletics</button>
+          <button data-filter-btn="admin" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Leadership & Admin</button>
+        </div>
+
+        <div class="w-full md:w-80 relative">
+          <input type="text" id="filter-search" placeholder="Search faculty by name or subject..." class="w-full pl-10 pr-4 py-2.5 bg-[#f3f0ff] border border-[#d4c8ff] rounded-xl text-sm text-[#23124f] placeholder-[#75669f] focus:outline-none focus:border-[#6d28d9] focus:bg-white focus:ring-1 focus:ring-[#6d28d9]">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-[#75669f] text-sm"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 flex-1 bg-[#f3f0ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+        <div data-category="admin" data-searchable="dr eleanor vance principal leadership ph.d oxford administration" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#6d28d9] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div class="h-72 overflow-hidden relative bg-[#f3f0ff]">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" alt="Dr. Eleanor Vance" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#ff4fcf]">Head of School</span>
+              <h3 class="text-lg font-bold text-[#23124f] mt-1">Dr. Eleanor Vance</h3>
+              <p class="text-xs text-[#6d28d9] font-semibold mb-3">Ph.D. Educational Leadership, Oxford</p>
+              <p class="text-xs text-[#75669f] line-clamp-3 leading-relaxed">22+ years in international education management, curriculum innovation, and global student exchange development.</p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-[#d4c8ff]/60 flex items-center justify-between text-xs text-[#75669f]">
+              <span class="hover:text-[#6d28d9] transition"><i class="fa-solid fa-envelope mr-1.5 text-[#6d28d9]"></i> principal@academe.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="stem" data-searchable="dr marcus chen physics stem robotics mit ap physics calculus" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#4CAF50] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div class="h-72 overflow-hidden relative bg-[#f3f0ff]">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop" alt="Dr. Marcus Chen" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#4CAF50]">Dean of STEM</span>
+              <h3 class="text-lg font-bold text-[#23124f] mt-1">Dr. Marcus Chen</h3>
+              <p class="text-xs text-[#4CAF50] font-semibold mb-3">Ph.D. Applied Physics, MIT</p>
+              <p class="text-xs text-[#75669f] line-clamp-3 leading-relaxed">Leads our championship FIRST Robotics team and mentors high school research publications in pure sciences.</p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-[#d4c8ff]/60 flex items-center justify-between text-xs text-[#75669f]">
+              <span class="hover:text-[#6d28d9] transition"><i class="fa-solid fa-envelope mr-1.5 text-[#6d28d9]"></i> m.chen@academe.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="humanities" data-searchable="sarah jenkins english literature comparative writing columbia" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#ff4fcf] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div class="h-72 overflow-hidden relative bg-[#f3f0ff]">
+            <img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?q=80&w=600&auto=format&fit=crop" alt="Sarah Jenkins" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#ff4fcf]">English Literature</span>
+              <h3 class="text-lg font-bold text-[#23124f] mt-1">Sarah Jenkins, M.A.</h3>
+              <p class="text-xs text-[#ff4fcf] font-semibold mb-3">M.A. Comparative Literature, Columbia</p>
+              <p class="text-xs text-[#75669f] line-clamp-3 leading-relaxed">Published author and debate coach cultivating analytical reading, eloquence, and critical writing skills.</p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-[#d4c8ff]/60 flex items-center justify-between text-xs text-[#75669f]">
+              <span class="hover:text-[#6d28d9] transition"><i class="fa-solid fa-envelope mr-1.5 text-[#6d28d9]"></i> s.jenkins@academe.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="stem" data-searchable="dr arjun patel pure mathematics stanford calculus olympiad" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#6d28d9] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div class="h-72 overflow-hidden relative bg-[#f3f0ff]">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" alt="Dr. Arjun Patel" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#6d28d9]">Mathematics Lead</span>
+              <h3 class="text-lg font-bold text-[#23124f] mt-1">Dr. Arjun Patel</h3>
+              <p class="text-xs text-[#6d28d9] font-semibold mb-3">Ph.D. Pure Mathematics, Stanford</p>
+              <p class="text-xs text-[#75669f] line-clamp-3 leading-relaxed">Specialist in AP Calculus BC, International Math Olympiad preparation, and combinatorics.</p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-[#d4c8ff]/60 flex items-center justify-between text-xs text-[#75669f]">
+              <span class="hover:text-[#6d28d9] transition"><i class="fa-solid fa-envelope mr-1.5 text-[#6d28d9]"></i> a.patel@academe.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="humanities" data-searchable="claire dubois french modern foreign languages sorbonne linguistics" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#00cfff] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div class="h-72 overflow-hidden relative bg-[#f3f0ff]">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop" alt="Claire Dubois" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#0284c7]">Modern Languages</span>
+              <h3 class="text-lg font-bold text-[#23124f] mt-1">Claire Dubois</h3>
+              <p class="text-xs text-[#0284c7] font-semibold mb-3">M.Ed., Sorbonne Université, Paris</p>
+              <p class="text-xs text-[#75669f] line-clamp-3 leading-relaxed">Head of European Foreign Languages and director of our annual cultural immersion abroad program.</p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-[#d4c8ff]/60 flex items-center justify-between text-xs text-[#75669f]">
+              <span class="hover:text-[#6d28d9] transition"><i class="fa-solid fa-envelope mr-1.5 text-[#6d28d9]"></i> c.dubois@academe.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="arts" data-searchable="david sterling fine arts digital media rhode island design painting portfolio" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#ff4fcf] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div class="h-72 overflow-hidden relative bg-[#f3f0ff]">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop" alt="David Sterling" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#ff4fcf]">Visual & Fine Arts</span>
+              <h3 class="text-lg font-bold text-[#23124f] mt-1">David Sterling, BFA</h3>
+              <p class="text-xs text-[#ff4fcf] font-semibold mb-3">BFA, Rhode Island School of Design</p>
+              <p class="text-xs text-[#75669f] line-clamp-3 leading-relaxed">Renowned visual artist coaching students for entrance to premier global design academies.</p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-[#d4c8ff]/60 flex items-center justify-between text-xs text-[#75669f]">
+              <span class="hover:text-[#6d28d9] transition"><i class="fa-solid fa-envelope mr-1.5 text-[#6d28d9]"></i> d.sterling@academe.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="arts" data-searchable="coach rachel adams athletics kinesiology varsity track basketball" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#4CAF50] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div class="h-72 overflow-hidden relative bg-[#f3f0ff]">
+            <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=600&auto=format&fit=crop" alt="Coach Rachel Adams" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#4CAF50]">Director of Athletics</span>
+              <h3 class="text-lg font-bold text-[#23124f] mt-1">Coach Rachel Adams</h3>
+              <p class="text-xs text-[#4CAF50] font-semibold mb-3">M.S. Kinesiology & Athletic Training</p>
+              <p class="text-xs text-[#75669f] line-clamp-3 leading-relaxed">Former national track medalist directing varsity conditioning, tournament logistics, and student wellness.</p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-[#d4c8ff]/60 flex items-center justify-between text-xs text-[#75669f]">
+              <span class="hover:text-[#6d28d9] transition"><i class="fa-solid fa-envelope mr-1.5 text-[#6d28d9]"></i> r.adams@academe.edu</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-category="admin" data-searchable="james thurman dean student affairs counseling college harvard" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#6d28d9] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div class="h-72 overflow-hidden relative bg-[#f3f0ff]">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" alt="James Thurman" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[11px] font-extrabold uppercase tracking-widest text-[#6d28d9]">Dean of Students</span>
+              <h3 class="text-lg font-bold text-[#23124f] mt-1">James Thurman, M.Ed.</h3>
+              <p class="text-xs text-[#6d28d9] font-semibold mb-3">M.Ed. Counseling, Harvard</p>
+              <p class="text-xs text-[#75669f] line-clamp-3 leading-relaxed">Directs university admissions counseling, scholarship portfolios, and student community mentorship.</p>
+            </div>
+            <div class="mt-5 pt-4 border-t border-[#d4c8ff]/60 flex items-center justify-between text-xs text-[#75669f]">
+              <span class="hover:text-[#6d28d9] transition"><i class="fa-solid fa-envelope mr-1.5 text-[#6d28d9]"></i> j.thurman@academe.edu</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#fcfbff] text-[#75669f] py-10 border-t border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs sm:text-sm">
+      <p>&copy; 2026 Academe International School. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

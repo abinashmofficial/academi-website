@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Announcements & Notice Board | Academe International School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            app: '#f3f0ff',
+            pane: '#fcfbff',
+            bordercol: '#d4c8ff',
+            abigreen: '#4CAF50',
+            abidarkblue: '#6d28d9',
+            abicyan: '#00cfff',
+            abirose: '#ff4fcf',
+            textmain: '#23124f',
+            textmuted: '#75669f',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f3f0ff] text-[#23124f] font-sans antialiased flex flex-col min-h-screen">
+
+  <header class="bg-[#fcfbff]/95 backdrop-blur-md sticky top-0 z-40 border-b border-[#d4c8ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#6d28d9] via-[#8b5cf6] to-[#00cfff] flex items-center justify-center text-white text-2xl shadow-md shadow-[#6d28d9]/25 group-hover:rotate-6 transition-transform duration-300">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <span class="text-2xl font-black tracking-tight text-[#23124f]">ACADÈ<span class="text-[#6d28d9]">ME</span></span>
+            <span class="block text-[10px] font-bold tracking-widest text-[#75669f] uppercase -mt-1">International School</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold text-[#75669f]">
+          <a href="index.html" class="nav-link hover:text-[#6d28d9] transition">Home</a>
+          <a href="courses.html" class="nav-link hover:text-[#6d28d9] transition">Courses</a>
+          <a href="faculty.html" class="nav-link hover:text-[#6d28d9] transition">Faculty</a>
+          <a href="announcements.html" class="nav-link hover:text-[#6d28d9] transition active">Announcements</a>
+          <a href="gallery.html" class="nav-link hover:text-[#6d28d9] transition">Gallery</a>
+          <a href="templates.html" class="nav-link hover:text-[#6d28d9] transition">50+ Templates</a>
+          <a href="contact.html" class="nav-link hover:text-[#6d28d9] transition">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="contact.html" class="btn-primary font-bold px-6 py-2.5 rounded-xl shadow-md text-sm">
+            Apply Now
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl bg-[#f3f0ff] border border-[#d4c8ff] text-[#23124f]">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-[#fcfbff] border-b border-[#d4c8ff] px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Home</a>
+      <a href="courses.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Courses</a>
+      <a href="faculty.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Faculty</a>
+      <a href="announcements.html" class="block px-3 py-2 rounded-lg font-medium text-[#6d28d9] bg-[#f3e8ff]">Announcements</a>
+      <a href="gallery.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Gallery</a>
+      <a href="templates.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">50+ Templates</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Contact</a>
+    </div>
+  </header>
+
+  <section class="relative bg-gradient-to-b from-[#f3e8ff]/60 via-[#fcfbff] to-[#f3f0ff] py-20 text-center border-b border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#6d28d9] mb-2 block">Campus Communications</span>
+      <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-[#23124f] mb-4">Official Announcements & Notices</h1>
+      <p class="text-[#75669f] max-w-2xl mx-auto text-base">
+        Stay up to date with the latest schedules, circulars, assessment timetables, and athletic tournaments.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-8 bg-[#fcfbff] border-b border-[#d4c8ff] sticky top-20 z-30 backdrop-blur-md bg-[#fcfbff]/95 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        
+        <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+          <button data-filter-btn="all" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-[#6d28d9] text-white shadow-md shadow-[#6d28d9]/25 transition">All Notices</button>
+          <button data-filter-btn="academic" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Academic & Exams</button>
+          <button data-filter-btn="events" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Events & Workshops</button>
+          <button data-filter-btn="sports" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Sports</button>
+          <button data-filter-btn="circulars" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Circulars</button>
+        </div>
+
+        <div class="w-full md:w-80 relative">
+          <input type="text" id="filter-search" placeholder="Search notices by keyword..." class="w-full pl-10 pr-4 py-2.5 bg-[#f3f0ff] border border-[#d4c8ff] rounded-xl text-sm text-[#23124f] placeholder-[#75669f] focus:outline-none focus:border-[#6d28d9] focus:bg-white focus:ring-1 focus:ring-[#6d28d9]">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-[#75669f] text-sm"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 flex-1 bg-[#f3f0ff]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+
+      <div data-category="academic circulars" data-searchable="admissions open 2026 2027 scholarship early registration entrance test" class="card-3d p-8 rounded-3xl bg-gradient-to-r from-[#fcfbff] via-[#f3e8ff]/40 to-[#fcfbff] border-2 border-[#6d28d9] shadow-lg relative overflow-hidden">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+          <div class="flex items-center gap-3">
+            <span class="bg-[#6d28d9] text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+              <i class="fa-solid fa-thumbtack text-xs"></i> Pinned Announcement
+            </span>
+            <span class="text-xs text-[#6d28d9] font-bold">Sep 15, 2026</span>
+          </div>
+          <span class="text-xs font-bold px-3 py-1 rounded-full bg-[#f3e8ff] border border-[#d4c8ff] text-[#6d28d9]">Admissions Wing</span>
+        </div>
+        <h3 class="text-2xl font-black text-[#23124f] mb-3">Admissions Open For Academic Year 2026-2027 (K-12)</h3>
+        <p class="text-sm text-[#75669f] leading-relaxed mb-6">
+          Online enrollment and merit scholarship assessments are officially underway. Prospective students may register for baseline examinations starting October 15, 2026.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="contact.html" class="btn-primary inline-flex items-center gap-2 text-xs font-bold px-5 py-3 rounded-xl shadow-md">
+            <i class="fa-solid fa-file-signature"></i> Submit Online Application
+          </a>
+          <button onclick="alert('Admission Prospectus 2026-2027 downloaded.')" class="btn-secondary inline-flex items-center gap-2 text-xs font-bold px-5 py-3 rounded-xl shadow-sm">
+            <i class="fa-solid fa-download text-[#6d28d9]"></i> Download Prospectus (PDF)
+          </button>
+        </div>
+      </div>
+
+      <div data-category="academic" data-searchable="mid-term examination timetable schedule grades 6 to 12" class="card-3d p-7 rounded-3xl bg-[#fcfbff] border-2 border-[#d4c8ff] hover:border-[#6d28d9] transition flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-3">
+            <div class="flex items-center gap-2.5">
+              <span class="bg-[#f3e8ff] text-[#6d28d9] border border-[#d4c8ff] text-xs font-bold px-3 py-1 rounded-full">Academic & Assessment</span>
+              <span class="text-xs text-[#75669f]">Sep 25, 2026</span>
+            </div>
+            <span class="text-xs text-[#6d28d9] font-semibold"><i class="fa-regular fa-calendar-days mr-1.5"></i> Exam Window: Oct 12 – Oct 22</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#23124f] mb-2">Mid-Term Assessment Timetable & Revision Modules</h3>
+          <p class="text-sm text-[#75669f] leading-relaxed mb-5">
+            Subject-wise syllabus outlines and exam guidelines for Grades 6 through 12 are now accessible. Laboratory practical evaluations will precede written examinations.
+          </p>
+        </div>
+        <div>
+          <button onclick="alert('Downloading Examination Datesheet...')" class="inline-flex items-center gap-2 text-xs font-bold text-[#6d28d9] hover:text-[#5b21b6] transition">
+            <i class="fa-solid fa-file-pdf text-[#ff4fcf]"></i> Download Mid-Term Schedule.pdf (1.2 MB)
+          </button>
+        </div>
+      </div>
+
+      <div data-category="events" data-searchable="annual science expo robotics artificial intelligence parents guest invitation" class="card-3d p-7 rounded-3xl bg-[#fcfbff] border-2 border-[#d4c8ff] hover:border-[#ff4fcf] transition flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-3">
+            <div class="flex items-center gap-2.5">
+              <span class="bg-[#fff0f9] text-[#ff4fcf] border border-[#fbcfe8] text-xs font-bold px-3 py-1 rounded-full">Exposition & Events</span>
+              <span class="text-xs text-[#75669f]">Sep 20, 2026</span>
+            </div>
+            <span class="text-xs text-[#ff4fcf] font-semibold"><i class="fa-regular fa-clock mr-1.5"></i> 9:00 AM – 4:30 PM (Main Auditorium)</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#23124f] mb-2">Annual STEM & AI Robotics Exposition 2026</h3>
+          <p class="text-sm text-[#75669f] leading-relaxed mb-5">
+            Over 120 student engineering projects, working autonomous rovers, and bio-tech exhibits will be demonstrated. Parents and alumni are warmly invited.
+          </p>
+        </div>
+        <div>
+          <button onclick="alert('Parent VIP Entry Pass requested.')" class="inline-flex items-center gap-2 text-xs font-bold text-[#ff4fcf] hover:text-[#db2777] transition">
+            <i class="fa-solid fa-ticket text-[#00cfff]"></i> Reserve Parent Guest Pass
+          </button>
+        </div>
+      </div>
+
+      <div data-category="sports" data-searchable="autumn athletics trials football soccer track and field sports" class="card-3d p-7 rounded-3xl bg-[#fcfbff] border-2 border-[#d4c8ff] hover:border-[#4CAF50] transition flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-3">
+            <div class="flex items-center gap-2.5">
+              <span class="bg-[#e8f5e9] text-[#4CAF50] border border-[#c8e6c9] text-xs font-bold px-3 py-1 rounded-full">Athletics</span>
+              <span class="text-xs text-[#75669f]">Sep 18, 2026</span>
+            </div>
+            <span class="text-xs text-[#4CAF50] font-semibold"><i class="fa-solid fa-trophy mr-1.5"></i> North Sports Complex</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#23124f] mb-2">Inter-School Autumn Sports Championship Trials</h3>
+          <p class="text-sm text-[#75669f] leading-relaxed mb-5">
+            Varsity tryouts for sprint track, 4x100m relay, basketball, swimming, and soccer take place Oct 02–05. Registered participants must submit medical clearances.
+          </p>
+        </div>
+        <div>
+          <button onclick="alert('Downloading Athlete Consent Packet...')" class="inline-flex items-center gap-2 text-xs font-bold text-[#4CAF50] hover:text-[#388e3c] transition">
+            <i class="fa-solid fa-file-lines text-[#4CAF50]"></i> Download Athlete Registration Packet (PDF)
+          </button>
+        </div>
+      </div>
+
+      <div data-category="circulars" data-searchable="parent teacher interaction ptm term 1 consultation slot booking" class="card-3d p-7 rounded-3xl bg-[#fcfbff] border-2 border-[#d4c8ff] hover:border-[#6d28d9] transition flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 mb-3">
+            <div class="flex items-center gap-2.5">
+              <span class="bg-[#f3f0ff] text-[#23124f] border border-[#d4c8ff] text-xs font-bold px-3 py-1 rounded-full">Administrative</span>
+              <span class="text-xs text-[#75669f]">Sep 12, 2026</span>
+            </div>
+            <span class="text-xs text-[#75669f] font-semibold"><i class="fa-solid fa-user-group mr-1.5"></i> Hybrid (In-person & Zoom)</span>
+          </div>
+          <h3 class="text-xl font-bold text-[#23124f] mb-2">Parent-Educator Conference (Term 1) Slot Reservations</h3>
+          <p class="text-sm text-[#75669f] leading-relaxed mb-5">
+            Parents can reserve 1-on-1 consultation meetings with academic mentors and subject department heads through the parent portal.
+          </p>
+        </div>
+        <div>
+          <a href="contact.html" class="inline-flex items-center gap-2 text-xs font-bold text-[#6d28d9] hover:text-[#5b21b6] transition">
+            <i class="fa-solid fa-calendar-check"></i> Book Consultation Slot &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-[#fcfbff] text-[#75669f] py-10 border-t border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs sm:text-sm">
+      <p>&copy; 2026 Academe International School. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

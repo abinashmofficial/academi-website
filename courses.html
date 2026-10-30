@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses & Curriculum | Academe International School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            app: '#f3f0ff',
+            pane: '#fcfbff',
+            bordercol: '#d4c8ff',
+            abigreen: '#4CAF50',
+            abidarkblue: '#6d28d9',
+            abicyan: '#00cfff',
+            abirose: '#ff4fcf',
+            textmain: '#23124f',
+            textmuted: '#75669f',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f3f0ff] text-[#23124f] font-sans antialiased flex flex-col min-h-screen">
+
+  <header class="bg-[#fcfbff]/95 backdrop-blur-md sticky top-0 z-40 border-b border-[#d4c8ff] shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-[#6d28d9] via-[#8b5cf6] to-[#00cfff] flex items-center justify-center text-white text-2xl shadow-md shadow-[#6d28d9]/25 group-hover:rotate-6 transition-transform duration-300">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <span class="text-2xl font-black tracking-tight text-[#23124f]">ACADÈ<span class="text-[#6d28d9]">ME</span></span>
+            <span class="block text-[10px] font-bold tracking-widest text-[#75669f] uppercase -mt-1">International School</span>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold text-[#75669f]">
+          <a href="index.html" class="nav-link hover:text-[#6d28d9] transition">Home</a>
+          <a href="courses.html" class="nav-link hover:text-[#6d28d9] transition active">Courses</a>
+          <a href="faculty.html" class="nav-link hover:text-[#6d28d9] transition">Faculty</a>
+          <a href="announcements.html" class="nav-link hover:text-[#6d28d9] transition">Announcements</a>
+          <a href="gallery.html" class="nav-link hover:text-[#6d28d9] transition">Gallery</a>
+          <a href="templates.html" class="nav-link hover:text-[#6d28d9] transition">50+ Templates</a>
+          <a href="contact.html" class="nav-link hover:text-[#6d28d9] transition">Contact</a>
+        </nav>
+
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="contact.html" class="btn-primary font-bold px-6 py-2.5 rounded-xl shadow-md text-sm">
+            Apply Now
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2.5 rounded-xl bg-[#f3f0ff] border border-[#d4c8ff] text-[#23124f]">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-[#fcfbff] border-b border-[#d4c8ff] px-4 pt-3 pb-6 space-y-2">
+      <a href="index.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Home</a>
+      <a href="courses.html" class="block px-3 py-2 rounded-lg font-medium text-[#6d28d9] bg-[#f3e8ff]">Courses</a>
+      <a href="faculty.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Faculty</a>
+      <a href="announcements.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Announcements</a>
+      <a href="gallery.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Gallery</a>
+      <a href="contact.html" class="block px-3 py-2 rounded-lg font-medium text-[#23124f] hover:bg-[#f3f0ff]">Contact</a>
+    </div>
+  </header>
+
+  <section class="relative bg-gradient-to-b from-[#f3e8ff]/60 via-[#fcfbff] to-[#f3f0ff] py-20 text-center border-b border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <span class="text-xs font-bold uppercase tracking-widest text-[#6d28d9] mb-2 block">Academics & Curriculums</span>
+      <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-[#23124f] mb-4">Academic Programs & Specializations</h1>
+      <p class="text-[#75669f] max-w-2xl mx-auto text-base">
+        A globally recognized curriculum designed to challenge, inspire, and elevate students at every stage of their academic journey.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-8 bg-[#fcfbff] border-b border-[#d4c8ff] sticky top-20 z-30 backdrop-blur-md bg-[#fcfbff]/95 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        
+        <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+          <button data-filter-btn="all" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-[#6d28d9] text-white shadow-md shadow-[#6d28d9]/25 transition">All Programs</button>
+          <button data-filter-btn="primary" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Primary (1-5)</button>
+          <button data-filter-btn="middle" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Middle School (6-8)</button>
+          <button data-filter-btn="senior" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">Senior & AP (9-12)</button>
+          <button data-filter-btn="stem" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-[#fcfbff] border border-[#d4c8ff] text-[#23124f] hover:bg-[#ede8ff] transition">STEM & Robotics</button>
+        </div>
+
+        <div class="w-full md:w-80 relative">
+          <input type="text" id="filter-search" placeholder="Search courses or subjects..." class="w-full pl-10 pr-4 py-2.5 bg-[#f3f0ff] border border-[#d4c8ff] rounded-xl text-sm text-[#23124f] placeholder-[#75669f] focus:outline-none focus:border-[#6d28d9] focus:bg-white focus:ring-1 focus:ring-[#6d28d9]">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-[#75669f] text-sm"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 flex-1 bg-[#f3f0ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div data-category="primary" data-searchable="primary foundation literacy singapore math environmental science discovery" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#6d28d9] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div>
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=700&auto=format&fit=crop" alt="Primary Wing Students" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute top-4 right-4 bg-[#6d28d9] text-white text-xs font-bold px-3 py-1 rounded-full shadow">Grades 1 – 5</span>
+            </div>
+            <div class="p-7">
+              <h3 class="text-xl font-bold text-[#23124f] mb-2">Early Foundation & Primary Years</h3>
+              <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+                Inquiry-focused curriculum building reading mastery, Singapore Mathematics, environmental science, and social communication.
+              </p>
+              <h4 class="text-xs font-bold uppercase tracking-wider text-[#6d28d9] mb-3">Core Modules:</h4>
+              <ul class="text-xs text-[#23124f] space-y-2 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Phonics & Creative Expression</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Applied Mathematics & Logic</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Hands-on Discovery Science</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> French & Spanish Intro</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-7 pt-0 border-t border-[#d4c8ff]/60 mt-2 flex justify-between items-center text-xs">
+            <span class="text-[#75669f]">Duration: Full Academic Year</span>
+            <a href="contact.html" class="font-bold text-[#6d28d9] hover:text-[#5b21b6] flex items-center gap-1">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <div data-category="middle" data-searchable="middle school pre-algebra biology lab chemistry geography python coding" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#ff4fcf] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div>
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?q=80&w=700&auto=format&fit=crop" alt="Middle School Learning" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute top-4 right-4 bg-[#ff4fcf] text-white text-xs font-extrabold px-3 py-1 rounded-full shadow">Grades 6 – 8</span>
+            </div>
+            <div class="p-7">
+              <h3 class="text-xl font-bold text-[#23124f] mb-2">Middle School Interdisciplinary Track</h3>
+              <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+                Strengthens conceptual reasoning, scientific methods, global geography, Model UN debate, and algorithmic Python programming.
+              </p>
+              <h4 class="text-xs font-bold uppercase tracking-wider text-[#ff4fcf] mb-3">Core Modules:</h4>
+              <ul class="text-xs text-[#23124f] space-y-2 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Pre-Algebra & Euclidean Geometry</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Physical & Biological Sciences Labs</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> World Civics & Parliamentary Debate</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Python & Web Foundations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-7 pt-0 border-t border-[#d4c8ff]/60 mt-2 flex justify-between items-center text-xs">
+            <span class="text-[#75669f]">Duration: Full Academic Year</span>
+            <a href="contact.html" class="font-bold text-[#ff4fcf] hover:text-[#db2777] flex items-center gap-1">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <div data-category="senior stem" data-searchable="senior high honors stem ap calculus physics c computer science chemistry pre-med" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#00cfff] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div>
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=700&auto=format&fit=crop" alt="Advanced STEM Lab" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute top-4 right-4 bg-[#0284c7] text-white text-xs font-bold px-3 py-1 rounded-full shadow">Grades 9 – 12</span>
+            </div>
+            <div class="p-7">
+              <h3 class="text-xl font-bold text-[#23124f] mb-2">High School AP & Honors STEM</h3>
+              <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+                Elite collegiate prep program designed for aspirants of MIT, Stanford, Oxford, and top global engineering & medical institutions.
+              </p>
+              <h4 class="text-xs font-bold uppercase tracking-wider text-[#0284c7] mb-3">Core Modules:</h4>
+              <ul class="text-xs text-[#23124f] space-y-2 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> AP Calculus BC & Linear Algebra</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> AP Physics C & Organic Chemistry</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> AP Computer Science (Java & Algorithms)</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Capstone Engineering Thesis</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-7 pt-0 border-t border-[#d4c8ff]/60 mt-2 flex justify-between items-center text-xs">
+            <span class="text-[#75669f]">Duration: AP Track</span>
+            <a href="contact.html" class="font-bold text-[#0284c7] hover:text-[#0369a1] flex items-center gap-1">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <div data-category="senior" data-searchable="humanities law economics literature philosophy model un social science" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#6d28d9] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div>
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=700&auto=format&fit=crop" alt="Humanities and Literature" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute top-4 right-4 bg-[#6d28d9] text-white text-xs font-bold px-3 py-1 rounded-full shadow">Grades 9 – 12</span>
+            </div>
+            <div class="p-7">
+              <h3 class="text-xl font-bold text-[#23124f] mb-2">Humanities, Law & Global Affairs</h3>
+              <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+                Immersive curriculum in macroeconomics, international relations, constitutional law, and literary criticism.
+              </p>
+              <h4 class="text-xs font-bold uppercase tracking-wider text-[#6d28d9] mb-3">Core Modules:</h4>
+              <ul class="text-xs text-[#23124f] space-y-2 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> AP Macro & Microeconomics</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> International Relations & Diplomacy</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> AP English Literature & Composition</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Constitutional Law & Ethics</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-7 pt-0 border-t border-[#d4c8ff]/60 mt-2 flex justify-between items-center text-xs">
+            <span class="text-[#75669f]">Duration: Full Academic Year</span>
+            <a href="contact.html" class="font-bold text-[#6d28d9] hover:text-[#5b21b6] flex items-center gap-1">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <div data-category="stem" data-searchable="robotics artificial intelligence iot arduino electronics FIRST robotics competition" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#4CAF50] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div>
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=700&auto=format&fit=crop" alt="Robotics and Engineering Rig" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute top-4 right-4 bg-[#4CAF50] text-white text-xs font-bold px-3 py-1 rounded-full shadow">Innovation Academy</span>
+            </div>
+            <div class="p-7">
+              <h3 class="text-xl font-bold text-[#23124f] mb-2">Robotics, IoT & Artificial Intelligence</h3>
+              <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+                Hands-on fabrication laboratory focusing on microcontrollers, sensor integration, neural networks, and competition robotics.
+              </p>
+              <h4 class="text-xs font-bold uppercase tracking-wider text-[#4CAF50] mb-3">Core Modules:</h4>
+              <ul class="text-xs text-[#23124f] space-y-2 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Embedded Systems & Microcontrollers</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Computer Vision & Machine Learning</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Autonomous Vehicle Navigation</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> FIRST Robotics Competition Squad</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-7 pt-0 border-t border-[#d4c8ff]/60 mt-2 flex justify-between items-center text-xs">
+            <span class="text-[#75669f]">Duration: Specialized Year</span>
+            <a href="contact.html" class="font-bold text-[#4CAF50] hover:text-[#388e3c] flex items-center gap-1">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <div data-category="senior" data-searchable="fine arts studio painting digital design animation filmmaking UI UX" class="card-3d bg-[#fcfbff] rounded-3xl border-2 border-[#d4c8ff] hover:border-[#ff4fcf] overflow-hidden flex flex-col justify-between group shadow-sm">
+          <div>
+            <div class="relative h-56 overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=700&auto=format&fit=crop" alt="Fine Arts and Digital Media Studio" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+              <span class="absolute top-4 right-4 bg-[#ff4fcf] text-white text-xs font-bold px-3 py-1 rounded-full shadow">Creative Arts</span>
+            </div>
+            <div class="p-7">
+              <h3 class="text-xl font-bold text-[#23124f] mb-2">Visual & Digital Media Arts</h3>
+              <p class="text-[#75669f] text-sm leading-relaxed mb-6">
+                Mastery of classical studio painting, 3D modeling, cinematography, and college-ready portfolio development.
+              </p>
+              <h4 class="text-xs font-bold uppercase tracking-wider text-[#ff4fcf] mb-3">Core Modules:</h4>
+              <ul class="text-xs text-[#23124f] space-y-2 mb-6">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Studio Oil & Acrylic Techniques</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> 3D Animation & Digital Modeling</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> Cinematography & Video Editing</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-[#4CAF50] text-sm"></i> AP Studio Art Portfolio Review</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-7 pt-0 border-t border-[#d4c8ff]/60 mt-2 flex justify-between items-center text-xs">
+            <span class="text-[#75669f]">Duration: Elective / AP Track</span>
+            <a href="contact.html" class="font-bold text-[#ff4fcf] hover:text-[#db2777] flex items-center gap-1">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#fcfbff] text-[#75669f] py-10 border-t border-[#d4c8ff]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs sm:text-sm">
+      <p>&copy; 2026 Academe International School. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
